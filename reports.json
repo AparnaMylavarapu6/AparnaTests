@@ -1,0 +1,92 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6280196620,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Launch \"browsertype\" Browser and \"Url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "browsertype",
+                  "offset": 8
+                },
+                {
+                  "val": "Url",
+                  "offset": 34
+                }
+              ],
+              "location": "Login.launchbrowser(String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ff",
+                  "http://server/bank/"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 552205487,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify the Home page is displayed",
+            "match": {
+              "location": "Home.verifyhomepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "This scenario is designed to validate the all the tabs are functional is Home page",
+        "description": "",
+        "id": "validate-the-following-functionalities-on-the-login-module;this-scenario-is-designed-to-validate-the-all-the-tabs-are-functional-is-home-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2379607006,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click on each tab and verify that user navigates to correct page.",
+            "match": {
+              "location": "Home.click_on_each_tab_and_verify_that_user_navigates_to_correct_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@homepage"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the following functionalities on the Login module",
+    "description": "As an Admin User,Application should accept only Admin credentials\r\nif there is an invalid user name and password user must validate the error message\r\nif the user forgot the user name and password, the user should be able to reset",
+    "id": "validate-the-following-functionalities-on-the-login-module",
+    "keyword": "Feature",
+    "uri": "HomePage.feature"
+  }
+]
